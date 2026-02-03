@@ -1,0 +1,136 @@
+/* Base / layout */
+:root {
+  --bg: #f5f7f8;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2b71d9;
+  --max-width: 820px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: #222;
+}
+
+body {
+  padding: 2rem;
+  display: block;
+}
+
+header {
+  max-width: var(--max-width);
+  margin: 0 auto 1.5rem;
+  text-align: left;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Main content area */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Articles */
+article {
+  background: var(--card);
+  padding: 1.1rem 1.1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(16,24,40,0.04);
+  margin-bottom: 1rem;
+}
+
+article.featured {
+  background: #eef6ff;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+}
+
+article h2, article h3 {
+  margin: 0 0 0.35rem;
+  line-height: 1.2;
+}
+
+article p {
+  margin: 0.5rem 0 0.75rem;
+  color: #2b2b2b;
+}
+
+/* Metadata: inline list on one line */
+.meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.meta li {
+  display: inline;
+}
+
+/* separator bullet between meta items */
+.meta li + li::before {
+  content: "•";
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Read more link */
+.read-more {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* More Articles section */
+#more-articles {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(16,24,40,0.06);
+}
+
+#more-articles h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+#more-articles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#more-articles li + li {
+  margin-top: 0.35rem;
+}
+
+#more-articles a {
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  max-width: var(--max-width);
+  margin: 1.25rem auto 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
